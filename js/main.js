@@ -1,6 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
-
+	
   // Floating label headings for the contact form
   $("body").on("input propertychange", ".floating-label-form-group", function(e) {
     $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
@@ -15,7 +15,7 @@
   
   $(document).scroll(function () {
 	var $nav = $(".bg-light");
-	$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	$nav.toggleClass('scrolled shadow-sm', $(this).scrollTop() > $nav.height());
   });
   //primary navigation slide-in effect
   /*if ($(window).width() > MQL) {
